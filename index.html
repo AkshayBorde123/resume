@@ -52,10 +52,26 @@
         }
 
         /* Scrollable container */
+        /* Scrollable container */
         .table-container {
             width: 100%;
-            overflow-x: auto;
+            overflow-x: hidden;
+            /* Disable horizontal scrolling */
+            padding: 0 10px;
+            /* Add padding if needed */
         }
+
+        /* Table styles */
+        table {
+            width: 100%;
+            max-width: 100%;
+            /* Ensure table does not overflow */
+            table-layout: fixed;
+            /* Make sure columns are constrained */
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+
 
         /* Responsive design */
         @media (max-width: 600px) {
